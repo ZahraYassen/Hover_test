@@ -1,0 +1,62 @@
+.container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.square1 {
+  background: purple;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+h2 {
+  font-size: 2rem;
+  opacity: 0;
+}
+.square1:hover {
+  transition: 0.3s ease-in-out;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.square1:hover h2 {
+  opacity: 100%;
+  transition-duration: .3s;
+  transition-delay: .3s;
+}
+.square1::after {
+  position: absolute;
+  content: 'Zahrah';
+  font-size: 2rem;
+  width: 80%;
+  height: 80%;
+  background: lightblue;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.square1:hover:after {
+  opacity: 100%;
+  transition: .3s ease-in-out 1s;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: .3s ease-in-out 1s;
+  -moz-transition: .3s ease-in-out 1s;
+  -ms-transition: .3s ease-in-out 1s;
+  -o-transition: .3s ease-in-out 1s;
+}
